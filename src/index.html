@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="My story - Ceritakan masalah mu" />
+    <link rel="shortcut icon" href="/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>My story</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="main-header container">
+        <a href="#main-content" class="skip-link">Skip to content</a>
+        <a class="brand-name" href="#/">My story</a>
+
+        <nav id="navigation-drawer" class="navigation-drawer">
+          <ul id="nav-list" class="nav-list">
+            <li><a href="#/">Beranda</a></li>
+            <li style="display: none">
+              <a href="#/favorites" id="fav-nav-item">Favorit</a>
+            </li>
+            <li><a href="#/add">Tambah Story</a></li>
+            <li style="display: none"><button id="notif-nav-item"></button></li>
+            <li><a id="auth-nav-item"></a></li>
+          </ul>
+        </nav>
+
+        <button
+          id="drawer-button"
+          class="drawer-button"
+          aria-label="Toggle navigation menu"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content" class="main-content" tabindex="-1"></main>
+
+    <footer>
+      <div class="container">
+        <p>&copy;My story by hary 2025</p>
+      </div>
+    </footer>
+    <div id="loading-overlay">
+      <div style="font-size: 2rem">Loading...</div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script type="module" src="./scripts/index.js"></script>
+  </body>
+</html>
